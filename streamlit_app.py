@@ -80,7 +80,7 @@ if mode == "Meeting room":
             st.markdown("---")
             st.write("Quick actions")
             if st.button("Generate summary from chat"):
-                transcript = "\n".join([f\"{m['sender']}: {m['message']}\" for m in chat_msgs])
+                transcript = "\n".join([f"{m['sender']}: {m['message']}" for m in chat_msgs])
                 if not transcript.strip():
                     st.warning("No chat to summarize.")
                 else:
